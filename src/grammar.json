@@ -762,52 +762,55 @@
       ]
     },
     "escaped_character": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "\\"
-        },
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "PATTERN",
-              "value": "."
-            },
-            {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "x"
-                },
-                {
-                  "type": "PATTERN",
-                  "value": "[0-9A-Fa-f]+"
-                }
-              ]
-            },
-            {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "o"
-                },
-                {
-                  "type": "PATTERN",
-                  "value": "[0-7]+"
-                }
-              ]
-            },
-            {
-              "type": "PATTERN",
-              "value": "\\d+"
-            }
-          ]
-        }
-      ]
+      "type": "TOKEN",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "\\"
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "PATTERN",
+                "value": "."
+              },
+              {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": "x"
+                  },
+                  {
+                    "type": "PATTERN",
+                    "value": "[0-9A-Fa-f]+"
+                  }
+                ]
+              },
+              {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": "o"
+                  },
+                  {
+                    "type": "PATTERN",
+                    "value": "[0-7]+"
+                  }
+                ]
+              },
+              {
+                "type": "PATTERN",
+                "value": "\\d+"
+              }
+            ]
+          }
+        ]
+      }
     },
     "pattern_character": {
       "type": "PATTERN",

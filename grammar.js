@@ -54,7 +54,9 @@ module.exports = grammar({
     _char: $ => choice($.pattern_character, $.escaped_character),
 
     // escaped_character: $ => choice(/\\[\\_\'%\[\]\.:;,\$\|\*\+\?\#\~\-\{\}\(\)\^\/@tfvrn"<>=\w\d]/, /\\x([0-9A-Fa-f]){2,4}/, '\\ '),
-    escaped_character: $ => seq('\\', choice(/./, seq('x', /[0-9A-Fa-f]+/), seq('o', /[0-7]+/), /\d+/)),
+    escaped_character: $ => token(
+      seq('\\', choice(/./, seq('x', /[0-9A-Fa-f]+/), seq('o', /[0-7]+/), /\d+/))
+    ),
 
     pattern_character: $ => /[^\.;,\$\|\*\+\?\#\~\-\{\}\(\)\[\]\^\/\s%<=]/,
 

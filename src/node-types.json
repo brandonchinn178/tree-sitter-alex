@@ -69,11 +69,6 @@
     }
   },
   {
-    "type": "escaped_character",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "left_ctx",
     "named": true,
     "fields": {},
@@ -455,10 +450,6 @@
     "named": false
   },
   {
-    "type": "\\",
-    "named": false
-  },
-  {
     "type": "]",
     "named": false
   },
@@ -479,12 +470,12 @@
     "named": true
   },
   {
-    "type": "identifier",
+    "type": "escaped_character",
     "named": true
   },
   {
-    "type": "o",
-    "named": false
+    "type": "identifier",
+    "named": true
   },
   {
     "type": "pattern_character",
@@ -493,10 +484,6 @@
   {
     "type": "string",
     "named": true
-  },
-  {
-    "type": "x",
-    "named": false
   },
   {
     "type": "{",

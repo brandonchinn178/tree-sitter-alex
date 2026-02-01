@@ -4,7 +4,8 @@
   "description": "",
   "main": "bindings/node",
   "scripts": {
-    "generate": "tree-sitter generate"
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test"
   },
   "author": "",
   "license": "ISC",
