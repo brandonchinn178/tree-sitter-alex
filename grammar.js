@@ -71,6 +71,6 @@ module.exports = grammar({
 
     comment: _ => seq('--', /.*/),
 
-    identifier: $ => token(/[A-Za-z][A-Za-z'_]*/),
+    identifier: $ => token(/[A-Za-z][A-Za-z0-9'_]*/),
   }
 });

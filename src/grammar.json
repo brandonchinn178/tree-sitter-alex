@@ -884,7 +884,7 @@
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "[A-Za-z][A-Za-z'_]*"
+        "value": "[A-Za-z][A-Za-z0-9'_]*"
       }
     }
   },
