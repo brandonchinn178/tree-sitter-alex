@@ -1,0 +1,3 @@
+package-lock.json lingust-generated=true -diff
+src/** lingust-generated=true -diff
+bindings/** lingust-generated=true -diff
