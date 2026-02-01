@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "alex",
+      "camelcase": "Alex",
+      "title": "Alex",
+      "scope": "source.alex",
+      "file-types": [
+        "x"
+      ],
+      "injection-regex": "^alex$",
+      "class-name": "TreeSitterAlex"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "BSD 3-Clause",
+    "description": "Alex grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Brandon Chinn",
+        "email": "brandonchinn178@gmail.com",
+        "url": "https://brandonchinn178.github.io"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/brandonchinn178/tree-sitter-alex"
+    }
+  },
+  "bindings": {
+    "c": false,
+    "go": false,
+    "java": false,
+    "node": true,
+    "python": false,
+    "rust": true,
+    "swift": false,
+    "zig": false
+  }
+}
