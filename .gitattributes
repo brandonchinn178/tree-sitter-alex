@@ -1,3 +1,4 @@
 package-lock.json lingust-generated=true -diff
 src/** lingust-generated=true -diff
+src/scanner.c lingust-generated=false diff
 bindings/** lingust-generated=true -diff

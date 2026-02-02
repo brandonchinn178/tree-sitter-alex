@@ -45,6 +45,7 @@ static bool scan_code_block(TSLexer *lexer) {
       }
     }
     if (lexer->lookahead == '"') {
+      lexer->advance(lexer, false);
       scan_code_string(lexer, '"');
     }
     if (lexer->lookahead == '{') {
